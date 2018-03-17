@@ -1,0 +1,220 @@
+body {
+	margin: 0px;
+}
+
+
+.preload {
+	width: 100%;
+	height: 100%;
+	background: #333;
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 1;
+}
+
+.logo {
+	width: 300px;
+	height: 70px;
+	margin: 150px auto 50px auto;
+	font-size: 50px;
+	color: azure;
+}
+
+.loader-frame {
+	width: 70px;
+	height: 70px;
+	margin: auto;
+	position: relative;
+}
+
+.loader-1 , .loader-2 {
+	position: absolute;
+	border: 5px solid transparent;
+	border-radius: 50%; 
+}
+
+.loader-1 {
+	width: 70px;
+	height: 70px;
+	border-top: 5px solid azure;
+	border-bottom: 5px solid azure; 
+	animation: clockwisespin 2s linear 3;
+}
+
+.loader-2 {
+	width: 60px;
+	height: 60px;
+	border-left : 5px solid darkturquoise;
+	border-right:  5px solid darkturquoise; 
+	animation: anticlockwisespin 2s linear 3;
+}
+
+
+@keyframes clockwisespin {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+
+
+
+@keyframes anticlockwisespin {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(-360deg);}
+}
+
+
+@keyframes fadeout {
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+
+
+#hero {
+	background-image: url('../img/pexels-2.jpeg');
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	height: 100vh;
+	z-index: -10;
+}
+
+#hero-overlay {
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -5;
+}
+
+
+#hero-2 {
+	background-image: url('../img/pexels-4.jpeg');
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	height: 100vh;
+	z-index: -10;
+}
+
+#hero-3 {
+	background-image: url('../img/pexels-5.jpeg');
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	height: 100vh;
+	z-index: -10;
+}
+
+
+.top {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 23px;
+}
+
+
+
+
+#corner {
+	float: right;
+	position: static;
+}
+
+
+#client:hover {
+	color: gray;
+	border: 1px solid gray;
+}
+
+#freelancer:hover {
+	color: gray;
+	border: 1px solid gray;
+}
+
+.transparent-btn {
+	display: inline-block;
+	font-size: 18px;
+	line-height: 150%;
+	width: 180px;
+	text-align: center;
+	color: #FFF;
+	background-color: transparent;
+	border: 1px solid #FFF;
+	border-radius: 25px; 
+	padding: 10px 20px;
+	margin-top: 15px;
+	margin-right: 10px; 
+}
+
+
+
+#heading {
+	color: #FFF;
+	float: left;
+	height: 50px;
+	z-index: 2;
+}
+
+h1 {
+	color: white;
+}
+
+.h4 {
+	padding-left: 35px;
+	margin-top: -5px; 
+}
+
+.intro {
+	color: white;
+	position: absolute;
+	font-size: 40px;
+	margin-left: 350px;
+	margin-top: 40px;
+}
+
+
+#project-type {
+	display: inline-block;
+	font-size: 32px;
+	line-height: 150%;
+	width: 340px;
+	text-align: center;
+	color: #FFF;
+	background-color: transparent;
+	border: 1px solid #FFF;
+	border-radius: 25px; 
+	padding: 10px 20px;
+	margin-top: 15px; 
+}
+.search-box {
+	width: 320px;
+	height: 420px;
+	/*background-color: rgba(0,0,0,0.5);*/
+	color: #fff;
+	top: 50%;
+	margin-left: 650px; 
+	margin-top: 70px;
+	position: absolute;
+	transform: translate(-50% , -50%);
+	box-sizing: border-box;
+}
+
+#search {
+	margin-left: 60px;
+}
+
+#search:hover {
+	border: 1px solid gray;
+}

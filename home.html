@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class = "fsvs" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="./fsvs/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+	<div id="fsvs-body">
+		<div class="slide slide-1" id="hero">
+			<div id="hero-overlay">
+				<div class="top">
+					<div  id="corner">
+					<!-- <a href="#" class="transparent-btn">Client</a>
+					<a href="#" class="transparent-btn">Freelancer</a> -->
+					<button id = "client" class="transparent-btn">Client</button>
+					<button id = "freelancer" class="transparent-btn">Freelancer</button>
+	
+				</div>
+					<div id="heading">
+						<h1>FreelanceWale</h1>
+						<h4 class="h4">By EduFlick</h4>
+					</div>
+				</div>
+
+				<div>
+					<p class = "intro"> Hiring a Freelancer made easy. </p>
+				</div>
+			</div>
+			<div class="search-box">
+					<input id="project-type" type="text" name="project-name" placeholder="Enter type of Service"> 
+					<button id="search" class=" glyphicon glyphicon-search transparent-btn">
+						<span>Search</span>
+					</button>
+			</div>
+		</div>
+
+		<div class="slide slide-2" id="hero-2">
+			<div id="hero-overlay">
+				<div  id="corner">
+					<!-- <a href="#" class="transparent-btn">Client</a>
+					<a href="#" class="transparent-btn">Freelancer</a> -->
+					<button id = "client" class="transparent-btn">Client</button>
+					<button id = "freelancer" class="transparent-btn">Freelancer</button>
+	
+				</div>
+					<div id="heading">
+						<h1>FreelanceWale</h1>
+						<h4 class="h4">By EduFlick</h4>
+					</div>
+				</div>
+			</div>
+		<div class="slide slide-3" id = "hero-3">
+			<div id="hero-overlay">
+				<div  id="corner">
+					<!-- <a href="#" class="transparent-btn">Client</a>
+					<a href="#" class="transparent-btn">Freelancer</a> -->
+					<button id = "client" class="transparent-btn">Client</button>
+					<button id = "freelancer" class="transparent-btn">Freelancer</button>
+	
+				</div>
+					<div id="heading">
+						<h1>FreelanceWale</h1>
+						<h4 class="h4">By EduFlick</h4>
+					</div>
+			</div>
+		</div>
+	</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="./fsvs/bundle.js"></script>
+	<script>
+		$(document).ready( function() {
+	var slider = $.fn.fsvs({
+		speed : 2000,
+		bodyID : 'fsvs-body',
+		selector : '> .slide',
+		mouseSwipeDisance : 40,
+		afterSlide : function(){},
+		beforeSlide : function(){},
+		endSlide : function(){},
+		mouseWheelEvents : true,
+		mouseWheelDelay : false,
+		scrollableArea : 'scrollable',
+		mouseDragEvents : true,
+		touchEvents : true,
+		arrowKeyEvents : true,
+		pagination : true,
+		nthClasses : false,
+		detectHash : true
+	});
+	//slider.slideUp();
+	//slider.slideDown();
+	//slider.slideToIndex( index );
+	//slider.unbind();
+	//slider.rebind();
+});
+	</script>
+</body>
+</html>
